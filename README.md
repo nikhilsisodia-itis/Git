@@ -74,14 +74,7 @@ Git Committing is the technique of saving changes from the staging ares to the r
 <br>
 This command creates a SnapShot of user's project current state.
 <br>
-Includes only those directories & files that are been staged. 
-
-## Pull changes from a remote repository:
-    git pull <remote> <branch> 
-
-This command is used to fetch and integrate changes from a remote repository into your current branch. 
-<br>
-It is a combination of git fetch and git merge.
+Includes only those directories & files that are been staged.
 
 ## Push changes to the remote repository:
     git push <remote> <branch>
@@ -89,6 +82,13 @@ It is a combination of git fetch and git merge.
 This command is used to upload your local repository content to a remote repository.
 <br>
 It transfers commits from your local branch to a remote branch.
+
+## Pull changes from a remote repository:
+    git pull <remote> <branch> 
+
+This command is used to fetch and integrate changes from a remote repository into your current branch. 
+<br>
+It is a combination of git fetch and git merge.
 
 ## Check the logs:
     git log
