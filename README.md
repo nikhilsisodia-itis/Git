@@ -40,6 +40,18 @@ Origin is a common convention for the main remote repository.
 ## Verify the new remote URL:
     git remote -v
 
+Output: 
+<br>
+<br>
+origin <span style='color: royalblue;'> link to your remote repo </span> (fetch)
+<br>
+origin <span style='color: royalblue;'>link to your remote repo </span> (push)
+
+## Check the status:
+    git status
+
+The 'git status' command displays the state of the working directory and the staging area.
+
 ## Add changes to the staging environment:
     git add <file_name>
 
@@ -83,11 +95,14 @@ It transfers commits from your local branch to a remote branch.
 
 The 'git log' command is used to display the commit history of the current branch.
 
+## Switch to a specific commit:
+    git checkout <commit_id>
 
-## Check the status:
-    git status
-
-The 'git status' command displays the state of the working directory and the staging area.
+The 'git checkout' command is used to switch between branches or commits in a repository.
+<br>
+It is used to update the working directory to a specific commit.
+<br>
+*Note*: You can get the commit_id from the 'git log' command.
 
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
