@@ -95,14 +95,17 @@ It is a combination of git fetch and git merge.
 
 The 'git log' command is used to display the commit history of the current branch.
 
-## Switch to a specific commit:
-    git checkout <commit_id>
+## Switch to a specific branch OR commit:
+    git checkout <branch_name> OR <commit_id>
 
 The 'git checkout' command is used to switch between branches or commits in a repository.
 <br>
 It is used to update the working directory to a specific commit.
 <br>
 *Note*: You can get the commit_id from the 'git log' command.
+
+## Forcefully switch to a specific branch OR commit:
+    git checkout -f <branch_name> OR <commit_id>
 
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
