@@ -149,6 +149,13 @@ It is used to update the working directory to a specific commit.
 
 The 'git checkout -f' command is used to forcefully switch between branches or commits in a repository.
 
+# Merge a branch:
+    git merge <branch_name>
+
+The 'git merge' command is used to merge changes from one branch to another.
+<br>
+It is used to integrate changes from another branch into your current branch.
+
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
         
