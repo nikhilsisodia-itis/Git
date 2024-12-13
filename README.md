@@ -7,15 +7,14 @@
 Follow the on-screen Git install process.
 
 ## Create GitHub Account:
->Go to [GitHub](https://github.com/) and sign up for an account.
+>Go to [GitHub.com](https://github.com/) and sign up for an account.
 
 ## Git Configuration:
 Configuration let Git know who you are. 
 <br>
 It also helps to specify changes made by you in a Project(s).
 
->    git config --global user.name "GitHub_UserName"
-> <br>
+    git config --global user.name "GitHub_UserName"
     git config --global user.email "GitHub_Email"
 
 (Replace GitHub_UserName and GitHub_Email with your GitHub Username and Email.)
@@ -25,14 +24,14 @@ It also helps to specify changes made by you in a Project(s).
 Remove global if you want to set the username and e-mail for your current repository.
 
 ## Initialize a repo in your local project: 
->    git init
+    git init
 
 The 'git init' command is used to initialize a new Git repository.
 <br>
 The command creates a new GitHub repo in the current directory on your local machine.
 
 ## Connect your local repo with the remote repo:
->   git remote add origin <your_github_repo_url>
+    git remote add origin <your_github_repo_url>
 
 'remote' is a subcommand used to manage a remote repository connections.
 <br>
@@ -43,26 +42,25 @@ The command creates a new GitHub repo in the current directory on your local mac
 Origin is a common convention for the main remote repository.
 
 ## Verify the new remote URL:
->    git remote -v
+    git remote -v
 
 Output: 
-<br>
 <br>
 origin <span style='color: royalblue;'> link to your remote repo </span> (fetch)
 <br>
 origin <span style='color: royalblue;'>link to your remote repo </span> (push)
 
 ## Check the status:
->    git status
+    git status
 
 The 'git status' command displays the state of the working directory and the staging area.
 
 ## Add changes to the staging environment:
->    git add <file_name>
+    git add <file_name>
 
 OR
 
->    git add .
+    git add .
 
 The 'git add' commands is used to add changes to the staging environment. 
 <br>
@@ -73,7 +71,7 @@ The 'git add <file_name>' command is used to add a specific file to the staging 
 The 'git add .' command is used to add all the changes to the staging environment.
 
 ## Commit Changes:
->    git commit -m '<commit_message>'
+    git commit -m '<commit_message>'
 
 Git Committing is the technique of saving changes from the staging ares to the repo. 
 <br>
@@ -82,7 +80,7 @@ This command creates a SnapShot of user's project current state.
 Includes only those directories & files that are been staged.
 
 ## Set the upstream branch:
->    git push -u origin <branch>
+    git push -u origin <branch>
 
 The 'git push -u' command is used to push changes to the remote repository.
 <br>
@@ -91,26 +89,26 @@ The '-u' flag is used to set the upstream branch.
 *Note:* You need to set the upstream only once per branch, this publishes the branch on the remote repo.
 
 ## Push changes to the remote repository:
->    git push <remote> <branch>
+    git push <remote> <branch>
 
 This command is used to upload your local repository content to a remote repository.
 <br>
 It transfers commits from your local branch to a remote branch.
 
 ## Pull changes from a remote repository:
->    git pull <remote> <branch> 
+    git pull <remote> <branch> 
 
 This command is used to fetch and integrate changes from a remote repository into your current branch. 
 <br>
 It is a combination of git fetch and git merge.
 
 ## Check the logs:
->    git log
+    git log
 
 The 'git log' command is used to display the commit history of the current branch.
 
 ## Create a new branch:
->    git branch <branch_name>
+    git branch <branch_name>
 
 Branches allows you to keep different versions OR features of your project. 
 <br>
@@ -119,17 +117,17 @@ Branches can be used to develop features, fix bugs, etc.
 The 'git branch' command is used to create a new branch in the repository.
 
 ## List all branches:
->    git branch
+    git branch
 
 The 'git branch' command is used to list all the branches in the repository.
 
 ## Delete a branch:
->    git branch -d <branch_name>
+    git branch -d <branch_name>
 
 The 'git branch -d' command is used to delete a branch in the repository.
 
-## Set the default branch:
->    git branch -M <branch_name>
+## Set or change the default branch name:
+    git branch -M <branch_name>
 
 The 'git branch -M' command is used to rename the current branch.
 <br>
@@ -138,7 +136,7 @@ The 'git branch -M' command is used to rename the current branch.
 'main' is the default branch name that is mostly used over the Internet.
 
 ## Switch to a specific branch OR commit:
->    git checkout <branch_name> OR <commit_id>
+    git checkout <branch_name> OR <commit_id>
 
 The 'git checkout' command is used to switch between branches or commits in a repository.
 <br>
@@ -147,24 +145,23 @@ It is used to update the working directory to a specific commit.
 *Note*: You can get the commit_id from the 'git log' command.
 
 ## Forcefully switch to a specific branch OR commit:
->    git checkout -f <branch_name> OR <commit_id>
+    git checkout -f <branch_name> OR <commit_id>
 
 The 'git checkout -f' command is used to forcefully switch between branches or commits in a repository.
 
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
         
->    ssh-keygen -t ed25519 -C "your_email@example.com"
+    ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Step 2: Add your SSH key to the SSH agent:
         
->   eval "$(ssh-agent -s)"
-> <br>
->   ssh-add ~/.ssh/id_ed25519
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_ed25519
 
 Step 3: Copy the SSH key to your clipboard:
 
->   clip < ~/.ssh/id_ed25519.pub
+    clip < ~/.ssh/id_ed25519.pub
 
 Step 4: Add the SSH key to your GitHub account:
 
@@ -180,7 +177,7 @@ Paste the key from your clipboard into the "Key" field and give it a title.
 
 Step 5: Test your SSH connection:
 
->   ssh -T git@github.com
+    ssh -T git@github.com
 
 Output: Hi <your_username_will_be_displayed>! You've successfully authenticated, but GitHub does not provide shell access.
 
