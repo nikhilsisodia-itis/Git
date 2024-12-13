@@ -126,14 +126,14 @@ The 'git branch' command is used to list all the branches in the repository.
 
 The 'git branch -d' command is used to delete a branch in the repository.
 
-## Set or change the default branch name:
+## Set or change the branch name:
     git branch -M <branch_name>
 
 The 'git branch -M' command is used to rename the current branch.
 <br>
-<branch_name> can be any name you want to set as the default branch.
+<branch_name> can be any name you want to set as the branch name.
 <br>
-'main' is the default branch name that is mostly used over the Internet.
+*Note:* 'main' is the default branch name that is mostly used over the Internet.
 
 ## Switch to a specific branch OR commit:
     git checkout <branch_name> OR <commit_id>
