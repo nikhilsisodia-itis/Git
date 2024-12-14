@@ -149,12 +149,33 @@ It is used to update the working directory to a specific commit.
 
 The 'git checkout -f' command is used to forcefully switch between branches or commits in a repository.
 
-# Merge a branch:
+## Merge a branch:
     git merge <branch_name>
 
 The 'git merge' command is used to merge changes from one branch to another.
 <br>
 It is used to integrate changes from another branch into your current branch.
+
+## Reset changes:
+### 1. Soft reset:
+Undo changes in your repository without losing the changes in your working directory. 
+<br>
+It moves the HEAD pointer to a specified commit, but it does not modify the working directory or the staging area.
+
+        git reset --soft <commit_id>
+### 2. Mixed reset:
+Undo changes in your repository and the changes in your staging area.
+<br>
+It moves the HEAD pointer to a specified commit and modifies the staging area, but it does not modify the working directory.
+
+        git reset <commit_id>
+
+### 3. Hard reset:
+Undo changes in your repository, the changes in your staging area, and the changes in your working directory.
+<br>
+It moves the HEAD pointer to a specified commit, modifies the staging area, and modifies the working directory.
+
+        git reset --hard <commit_id>
 
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
