@@ -154,13 +154,19 @@ The 'git checkout -f' command is used to forcefully switch between branches or c
     
         git reset --soft <commit_id>
 
+   Undo commit but keep changes staged.
+
 2. Mixed reset:
 
         git reset --mixed <commit_id>
 
+   Undo commit and unstage changes.
+
 3. Hard reset:
     
        git reset --hard <commit_id>
+
+   Undo commit and discard changes.
 
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
