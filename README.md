@@ -177,6 +177,17 @@ It moves the HEAD pointer to a specified commit, modifies the staging area, and 
 
         git reset --hard <commit_id>
 
+## Revert changes:
+Git revert is a command used to create a new commit that update the project to the specified commit.
+<br>
+It is used to undo changes in the repository.
+<br>
+Revert maintains the history of the project by adding a new commit that reverses the changes.
+
+        git revert <commit_id>
+
+
+
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
         
