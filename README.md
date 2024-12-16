@@ -186,7 +186,22 @@ Revert maintains the history of the project by adding a new commit that reverses
 
         git revert <commit_id>
 
+## Stash changes:
+In Git, stash is a feature that allows you to temporarily save changes in your working directory without committing them. 
+<br>
+This is useful when you need to switch branches or work on something else but want to come back to your changes later.
 
+    git stash <stash_index>
+
+## List stashed changes:
+The 'git stash list' command is used to list all the stashed changes in the repository.
+
+    git stash list
+
+## Apply stashed changes:
+The 'git stash apply' command is used to apply the most recent stashed changes to the working directory.
+
+    git stash apply <stash_index>
 
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
