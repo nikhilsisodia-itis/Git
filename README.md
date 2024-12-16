@@ -171,7 +171,7 @@ It moves the HEAD pointer to a specified commit and modifies the staging area, b
         git reset <commit_id>
 
 ### 3. Hard reset:
-Undo changes in your repository, the changes in your staging area, and the changes in your working directory.
+Undo changes in your repository, changes in your staging area, and  changes in your working directory.
 <br>
 It moves the HEAD pointer to a specified commit, modifies the staging area, and modifies the working directory.
 
