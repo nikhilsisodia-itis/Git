@@ -149,6 +149,19 @@ It is used to update the working directory to a specific commit.
 
 The 'git checkout -f' command is used to forcefully switch between branches or commits in a repository.
 
+## Reset back to a specific commit:
+1. Soft reset: 
+    
+        git reset --soft <commit_id>
+
+2. Mixed reset:
+
+        git reset --mixed <commit_id>
+
+3. Hard reset:
+    
+       git reset --hard <commit_id>
+
 ## GitHub SSH Set-up:
 Step 1: Generate a new SSH key (if you don't have one):
         
